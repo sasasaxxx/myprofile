@@ -19,7 +19,7 @@ body {
 
   h1 {
     font-family: $font-family-title;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   h2 {
@@ -60,7 +60,7 @@ p {
   letter-spacing: 2px;
 
   @include mq(sm) {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
