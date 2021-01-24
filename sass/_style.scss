@@ -1,0 +1,71 @@
+@import "./base/reset";
+@import "./base/base";
+
+@import "./mixin/mixin";
+@import "./mixin/font";
+@import "./mixin/color";
+
+@import "header";
+@import "top";
+@import "main";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body {
+  font-family: $font-family-p;
+  color: $color-main;
+  background-color: $color-back;
+
+  h1 {
+    font-family: $font-family-title;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-family: $font-family-title;
+    font-size: 18px;
+  }
+  
+  h3 {
+    font-family: $font-family-title;
+    font-size: 15px;
+  }
+
+  @include mq(sm) {
+
+  }
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  // text-decoration: none;
+  color: $color-accent;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+p {
+  font-family: $font-family-p;
+  color: $color-text;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+
+  @include mq(sm) {
+    font-size: 12px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
