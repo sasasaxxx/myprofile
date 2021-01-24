@@ -1,0 +1,36 @@
+.main {
+  margin: 0 20%;
+
+  @include mq(sm) {
+    margin: 0 0 0 13%;
+  }
+}
+
+.question1 {
+  margin-top: 30px;
+}
+
+.question-title {
+  background-color: $color-title;
+  color: $color-text;
+  padding: 8px 0 8px 8px;
+  margin-bottom: 20px;
+}
+
+.answer {
+  font-family: $font-family-answer;
+  margin-bottom: 40px;
+
+  @include mq(sm) {
+    margin-bottom: 30px;
+  }
+}
+
+.question-text {
+  margin: 10px 0;
+}
+
+.question-link {
+  font-size: 18px;
+  margin: 10px 0;
+}
